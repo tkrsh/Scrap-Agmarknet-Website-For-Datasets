@@ -1,6 +1,3 @@
-import bs4 as bs 
-import pandas as pd 
-import selenium
 from selenium.webdriver.support.select import Select
 import time
 from tqdm import tqdm
