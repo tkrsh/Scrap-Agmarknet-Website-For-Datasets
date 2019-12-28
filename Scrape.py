@@ -18,7 +18,7 @@ for i in tqdm(range(2,20)):
     select_year.select_by_index(i)
     time.sleep(5)
     print("CurrentYear",2000+i)
-    for j in range(1,13):
+    for j in tqdm(range(1,13)):
         month_box= driver.find_element_by_id('cphBody_Month_list')
         select_month=Select(month_box)
         select_month.select_by_index(j)
